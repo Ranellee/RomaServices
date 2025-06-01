@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - RomaServices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-titre" style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 16px;">
+        <img src="image/LOGOROMAservices.png" alt="RomaServices Logo" width="80" height="80">
+        <h1 style="margin-bottom: 4px;">RomaServices</h1>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nos contacts</h2>
+            <ul>
+                <li>Téléphone ☎️ : +33 7 80 34 68 08 </li>
+                <li>Email 💬: romaservices2020@gmail.com </li>
+                <li>Adresse📍 : 142 rue de Clignancourt, 75018 Paris</li>
+                <li> Instagram 📸: 
+                    <a href="https://www.instagram.com/roma_services2020?igsh=dTkwNWxpZXlqaTdw&utm_source=qr" target="_blank">@roma_services2020</a>
+               <li> Gérant : SIMON MAMPOUYA </li>
+                </li>
+                
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="encadre-h3">Demander un devis</h3>
+  
+    <form>
+        <label for="nom">Nom* :</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="prenom">Prénom* :</label>
+        <input type="text" id="prenom" name="prenom" required><br>
+
+        <label for="societe">Société :</label>
+        <input type="text" id="societe" name="societe"><br>
+
+        <label for="email">Adresse-Email* :</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="telephone">Numéro de téléphone* :</label>
+        <input type="tel" id="telephone" name="telephone" required><br>
+
+        <label for="pays">Pays :</label>
+        <input type="text" id="pays" name="pays"><br>
+
+        <label for="message">Votre demande :</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+        <button id="quitter-btn">Quitter</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RomaServices by Ranelle Mampouya.</p>
+    </footer>
+    <script>
+        document.getElementById('quitter-btn').onclick = function() {
+            if (confirm("Êtes-vous sûr de quitter ?")) {
+                window.location.href = "index.html";
+            }
+        };
+    </script>
+</body>
+</html>

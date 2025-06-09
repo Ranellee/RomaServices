@@ -527,3 +527,198 @@ section h2 {
     max-width: 100%;
     display: block;
 }
+
+.atouts {
+    background: #fffdfa;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(196, 122, 27, 0.13);
+    padding: 40px 32px;
+    margin: 48px auto 40px auto;
+    max-width: 950px;
+    border-left: 8px solid #c47a1b;
+    border-right: 8px solid #c47a1b;
+    transition: box-shadow 0.3s;
+}
+.atouts:hover {
+    box-shadow: 0 8px 32px rgba(196, 122, 27, 0.18);
+}
+.atouts h2 {
+    background: #c47a1b;
+    color: #fff;
+    padding: 18px 0;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 2.3em;
+    box-shadow: 0 2px 8px rgba(196,122,27,0.10);
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    letter-spacing: 1px;
+}
+.atouts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.atouts li {
+    font-size: 1.35em;
+    color: #222;
+    margin-bottom: 26px;
+    line-height: 1.8;
+    padding-left: 52px;
+    position: relative;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.atouts li::before {
+    content: "✔";
+    color: #c47a1b;
+    font-size: 1.3em;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.atouts strong {
+    color: #c47a1b;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 700px) {
+    .atouts {
+        padding: 18px 4vw;
+        max-width: 99vw;
+        border-left: 4px solid #c47a1b;
+        border-right: 4px solid #c47a1b;
+    }
+    .atouts h2 {
+        font-size: 1.3em;
+        padding: 10px 0;
+    }
+    .atouts li {
+        font-size: 1.05em;
+        padding-left: 32px;
+    }
+}
+
+.apropos-atouts {
+    background: #fffdfa;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(196, 122, 27, 0.13);
+    padding: 40px 32px;
+    margin: 48px auto 40px auto;
+    max-width: 950px;
+    border-left: 8px solid #c47a1b;
+    border-right: 8px solid #c47a1b;
+    transition: box-shadow 0.3s;
+}
+.apropos-atouts:hover {
+    box-shadow: 0 8px 32px rgba(196, 122, 27, 0.18);
+}
+.apropos-atouts h2 {
+    background: #c47a1b;
+    color: #fff;
+    padding: 18px 0;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 2.3em;
+    box-shadow: 0 2px 8px rgba(196,122,27,0.10);
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    letter-spacing: 1px;
+}
+.apropos-atouts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.apropos-atouts li {
+    font-size: 1.35em;
+    color: #222;
+    margin-bottom: 26px;
+    line-height: 1.8;
+    padding-left: 52px;
+    position: relative;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.apropos-atouts li::before {
+    content: "✔";
+    color: #c47a1b;
+    font-size: 1.3em;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.apropos-atouts strong {
+    color: #c47a1b;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 700px) {
+    .apropos-atouts {
+        padding: 18px 4vw;
+        max-width: 99vw;
+        border-left: 4px solid #c47a1b;
+        border-right: 4px solid #c47a1b;
+    }
+    .apropos-atouts h2 {
+        font-size: 1.3em;
+        padding: 10px 0;
+    }
+    .apropos-atouts li {
+        font-size: 1.05em;
+        padding-left: 32px;
+    }
+}
+.contacts-section {
+    background: #fffdfa;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(196, 122, 27, 0.08);
+    padding: 32px 24px;
+    margin: 40px auto 32px auto;
+    max-width: 700px;
+}
+.contacts-section h2 {
+    background: #c47a1b;
+    color: #fff;
+    padding: 14px 0;
+    border-radius: 10px;
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 2em;
+    box-shadow: 0 2px 8px rgba(196,122,27,0.10);
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.18em;
+    color: #222;
+    gap: 10px;
+}
+.contact-icon {
+    font-size: 1.4em;
+    color: #c47a1b;
+}
+.contact-label {
+    font-weight: bold;
+    color: #c47a1b;
+    min-width: 110px;
+}
+.contact-link {
+    color: #222;
+    text-decoration: none;
+    word-break: break-all;
+}
+.contact-link:hover {
+    text-decoration: underline;
+    color: #c47a1b;
+}

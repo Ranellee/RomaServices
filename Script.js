@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const quitterLink = document.querySelector('a[href="quitter"]');
     if (quitterLink) {
         quitterLink.addEventListener('click', function (e) {
-            const confirmation = confirm("Voulez-vous vraiment quitter et revenir à l'acceuil ?");
+            const confirmation = confirm("Voulez vous vraiment quitté et revenir à la page d'acceuille ?");
             if (!confirmation) {
                 e.preventDefault();
             } else {

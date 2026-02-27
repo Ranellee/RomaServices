@@ -8,25 +8,38 @@
 </head>
 <body>
     <header>
-        <div class="logo-titre" style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 16px;">
+ <div>
+     <select id="lang-select" aria-label="Sélecteur de langue">
+         <option value="fr">Français</option>
+         <option value="en">English</option>
+         <option value="es">Español</option>
+         <option value="zh">中文</option>
+         <option value="ru">Русский</option>
+         <option value="ar">العربية</option>
+         <option value="pt">Português</option>
+         <option value="de">Deutsch</option>
+         <option value="it">Italiano</option>
+     </select>
+ </div>
+        <div class="logo-titre">
             <img src="image/LOGOROMAservices.png" alt="RomaServices Logo" width="80" height="80">
-            <h1 style="margin: 0;">ROMA Services</h1>
-        <p style="margin: 0; text-align: left; font-size: 2.0em;">Echafaudages</p>
+            <h1 data-i18n="header.title">ROMA Services</h1>
+        <p data-i18n="header.tagline">Echafaudages</p>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="engagement.html">Nos engagements</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="engagement.html" data-i18n="nav.engagements">Nos engagements</a></li>
+                <li><a href="apropos.html" data-i18n="nav.about">À propos</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="engagements">
-            <h2>Nos engagements</h2>
+            <h2 data-i18n="engagements.title">Nos engagements</h2>
             <div class="engagements-list">
                 <div class="engagement">
                     <img src="image/ImageVideos - Copie.png" alt="Sécurité" width="60" height="60">
@@ -55,5 +68,6 @@
     <footer>
         <p>&copy; 2025 ROMAservices by Ranelle Mampouya.</p>
     </footer>
+    <script src="Script.js"></script>
 </body>
 </html>

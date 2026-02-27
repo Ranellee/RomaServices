@@ -8,86 +8,99 @@
 </head>
 <body>
     <header>
-       <div class="logo-titre" style="display: flex; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 16px;">
-    <img src="image/LOGOROMAservices.png" alt="RomaServices Logo" width="80" height="80">
+ <div>
+     <select id="lang-select" aria-label="Sélecteur de langue">
+         <option value="fr">Français</option>
+         <option value="en">English</option>
+         <option value="es">Español</option>
+         <option value="zh">中文</option>
+         <option value="ru">Русский</option>
+         <option value="ar">العربية</option>
+         <option value="pt">Português</option>
+         <option value="de">Deutsch</option>
+         <option value="it">Italiano</option>
+     </select>
+ </div>
+       <div class="logo-titre">
+    <img src="image/LOGOROMAservices.png" alt="RomaServices Logo" width="90" height="90">
     <div>
-        <h1 style="margin: 0;">ROMA Services</h1>
-        <p style="margin: 0; text-align: left; font-size: 1.2em;">Echafaudages</p>
+        <h1 data-i18n="header.title">ROMA Services</h1>
+        <p data-i18n="header.tagline">Echafaudages</p>
     </div>
 </div>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="apropos.html" data-i18n="nav.about">À propos</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="contacts-section">
-    <h2>Nos contacts</h2>
+    <h2 data-i18n="contact.title">Nos contacts</h2>
     <div class="contacts-list">
         <div class="contact-item">
             <span class="contact-icon">☎️</span>
-            <span class="contact-label">Téléphone :</span>
+            <span class="contact-label" data-i18n="contact.info.phoneLabel">Téléphone :</span>
             <a href="tel:+33780346808" class="contact-link">+33 7 80 34 68 08</a>
         </div>
         <div class="contact-item">
             <span class="contact-icon">💬</span>
-            <span class="contact-label">Email :</span>
+            <span class="contact-label" data-i18n="contact.info.emailLabel">Email :</span>
             <a href="mailto:romaservices2020@gmail.com" class="contact-link">romaservices2020@gmail.com</a>
         </div>
         <div class="contact-item">
             <span class="contact-icon">📍</span>
-            <span class="contact-label">Adresse :</span>
+            <span class="contact-label" data-i18n="contact.info.addressLabel">Adresse :</span>
             <span class="contact-link">142 rue de Clignancourt, 75018 Paris</span>
         </div>
         <div class="contact-item">
             <span class="contact-icon">📸</span>
-            <span class="contact-label">Instagram :</span>
+            <span class="contact-label" data-i18n="contact.info.instagramLabel">Instagram :</span>
             <a href="https://www.instagram.com/roma_services2020?igsh=dTkwNWxpZXlqaTdw&utm_source=qr" target="_blank" class="contact-link">@roma_services2020</a>
         </div>
         <div class="contact-item">
             <span class="contact-icon">🌐</span>
-            <span class="contact-label">linkedin :</span>
+            <span class="contact-label" data-i18n="contact.info.websiteLabel">linkedin :</span>
             <a href="https://www.linkedin.com/in/simon-mampouya-3732a267/?originalSubdomain=fr" target="_blank" class="contact-link">www.roma-services.fr</a>
         </div>
         <div class="contact-item">
             <span class="contact-icon">👤</span>
-            <span class="contact-label">Gérant :</span>
+            <span class="contact-label" data-i18n="contact.info.managerLabel">Gérant :</span>
             <span class="contact-link">SIMON MAMPOUYA</span>
         </div>
     </div>
 </section>
 
         <section>
-            <h3 class="encadre-h3">Demander un devis</h3>
+            <h3 class="encadre-h3" data-i18n="contact.formTitle">Demander un devis</h3>
   
     <form>
-        <label for="nom">Nom* :</label>
+        <label for="nom" data-i18n="contact.labels.nom">Nom* :</label>
         <input type="text" id="nom" name="nom" required><br>
 
-        <label for="prenom">Prénom* :</label>
+        <label for="prenom" data-i18n="contact.labels.prenom">Prénom* :</label>
         <input type="text" id="prenom" name="prenom" required><br>
 
-        <label for="societe">Société :</label>
+        <label for="societe" data-i18n="contact.labels.societe">Société :</label>
         <input type="text" id="societe" name="societe"><br>
 
-        <label for="email">Adresse-Email* :</label>
+        <label for="email" data-i18n="contact.labels.email">Adresse-Email* :</label>
         <input type="email" id="email" name="email" required><br>
 
-        <label for="telephone">Numéro de téléphone* :</label>
+        <label for="telephone" data-i18n="contact.labels.telephone">Numéro de téléphone* :</label>
         <input type="tel" id="telephone" name="telephone" required><br>
 
-        <label for="pays">Pays :</label>
+        <label for="pays" data-i18n="contact.labels.pays">Pays :</label>
         <input type="text" id="pays" name="pays"><br>
 
-        <label for="message">Votre demande :</label><br>
+        <label for="message" data-i18n="contact.labels.message">Votre demande :</label><br>
         <textarea id="message" name="message" rows="5" required></textarea><br>
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" data-i18n="contact.submit">Envoyer</button>
     </form>
 </section>
         <button id="quitter-btn">Quitter</button>
@@ -103,5 +116,6 @@
             }
         };
     </script>
+    <script src="Script.js"></script>
 </body>
 </html>
